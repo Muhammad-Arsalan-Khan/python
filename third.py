@@ -73,3 +73,17 @@ with open("numberfile.txt", "r") as f:
     print("The sum of odd numbers is:", odd, "total odd numbers are:", oddnumber)
     print("The sum of numbers in the file is:", total)
 
+import random
+
+user = int(input("enter the gusee number: "))
+computer = random.randint(1, 10)
+
+while user != computer:
+    print("wrong guess try again")
+    if user < computer:
+        print("try a higher number")
+    else:
+        print("try a lower number")
+    user = int(input("enter the gusee number: "))
+    
+print("congratulations! you guessed it right.")
