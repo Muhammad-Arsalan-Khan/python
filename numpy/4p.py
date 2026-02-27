@@ -15,11 +15,12 @@ print("--------------------------------")
 # flatten() -> returns a copy of the array collapsed into one dimension
 # ravel()  -> returns a flattened array as a view if possible
 
+# flatten() aur ravel() dono NumPy array ko 1D (single dimension) mein convert karte hain
 c = np.array([[1, 2, 3], [4, 5, 6]])
 flat_c = c.flatten()    
 ravel_c = c.ravel() 
-print("Flattened array using flatten():", flat_c)
-print("Flattened array using ravel():", ravel_c)
+print("Flattened array using flatten():", flat_c) # copy banata hain
+print("Flattened array using ravel():", ravel_c)  # original array
 print("--------------------------------")
 
 #manipulating

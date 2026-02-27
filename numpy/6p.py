@@ -6,7 +6,7 @@ print("Is NaN:", np.isnan(arr))  # Check for NaN values
 print("Mean ignoring NaN:", np.nanmean(arr))  # Calculate mean while ignoring NaN values
 print("Replace NaN with mean:", np.where(np.isnan(arr), np.nanmean(arr), arr))  # Replace NaN with mean value
 print("Replace NaN with 0:", np.nan_to_num(arr))  # Replace NaN with 0
-print("Replace NaN with 0:", np.nan_to_num(arr, nan=7))  # Replace NaN with 7
+print("Replace NaN with 7:", np.nan_to_num(arr, nan=7))  # Replace NaN with 7
 print("--------------------------------")
 print(np.nan == np.nan) # NaN is not equal to itself
 print(np.isnan(np.nan)) # Check if NaN is NaN (True)
