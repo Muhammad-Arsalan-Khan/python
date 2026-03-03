@@ -13,9 +13,9 @@ print(data3)
 # ya bad main parho ga 
 
 # display the first 5 rows of the DataFrame
-# print(data.head())
+print(data.head())
 # # display summary statistics of the DataFrame
-# print(data.describe())
+print(data.describe())
 # # filter rows where a specific column's value is greater than a threshold
 # filtered_data = data[data['column_name'] > threshold]
 # print(filtered_data)    
