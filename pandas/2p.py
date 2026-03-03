@@ -4,7 +4,7 @@ data = pd.read_csv("data/sales_data_sample.csv", encoding="latin1")
 # print(data)
 
 data2 = pd.read_excel("data/Book1.xlsx", engine="openpyxl")
-print(data2)
+# print(data2)
 
 data3 = pd.read_json("data/sample_Data.json")
 print(data3)

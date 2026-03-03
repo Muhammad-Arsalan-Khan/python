@@ -9,3 +9,15 @@
 # It consists of rows and columns, where:
 # Rows have indices (labels).
 # Columns have names (labels).
+
+# humm file ko read karty waqt uncoding lagaye gay.
+# agar large file hain to usko read karne ke liye chunk size use kar sakty hain.
+# or agar koi data cloude se read karna hain tu os ky python library use kar sakty hain jese gcsfs.
+
+# offical sdk use kar sakty hain.
+# boto3 for AWS S3, google-cloud-storage for Google Cloud Storage, or azure-storage-blob for Azure Blob Storag
+
+# Data               ---> Scientist	gcsfs
+# ML Engineer	     ---> gcsfs + SDK dono
+# Backend Developer  ---> Official SDK
+# DevOps	         ---> Official SDK
