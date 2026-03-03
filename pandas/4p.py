@@ -52,23 +52,34 @@ print(data.columns)
 #combine multiple conditions
 # filtered_Rows = df[(df["Column"] > value) & (df["Column2] < 80000)]
 
-# select single column
+# # select single column
+print('----------')
 print(data["SALES"])
-# select multiply
+# # select multiply
+print('----------')
 print(data[["SALES","STATE"]])
 
 # or agar sath row WISE b chahiya 
-# df.loc[row_label, column_name]
+# # df.loc[row_label, column_name]
+print('----------')
 print(data.loc[3, "SALES"])  #row 3
+print('----------')
 print(data.loc[0, "SALES"])  #row 0
+print('----------')
 print(data.loc[0:10, "SALES"]) # row 0 to 10   print(data.loc[:10, "SALES"])---> same 
+print('----------')
 
 # df.iloc[row_index, column_index]
-print(data.iloc[5:11])  ##5 se 11 row column dono
-print(data.iloc[5:11, [4, 18]])   ##5 se 11 ki row or column 4 or 18 
-
+print(data.iloc[5:7])  ##5 se 11 row column dono
+print('----------')
+print(data.iloc[5:11, [4, 18]]) 
+print('----------')  ##5 se 11 ki row or column 4 or 18 
+print(data.iloc[5:11, [4, 18, 6]])   ##5 se 11 ki row or column 4 or 18 or 6
+print('----------')
 QUANTITYORDERED25plus = data[data["QUANTITYORDERED"]>25]
 print(QUANTITYORDERED25plus)
+print('----------')
 
 QUANTITYORDERED25plusUnder30 = data[(data["QUANTITYORDERED"]>25) & (data["QUANTITYORDERED"]<30)]
 print(QUANTITYORDERED25plusUnder30)
+
