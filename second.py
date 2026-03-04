@@ -74,7 +74,7 @@
 # print("-------------------")
 
 # for i in range(1, 4):
-#     print(i)
+#     print("=>",i)
 # else:
 #     print("Loop complete ho gaya")
 

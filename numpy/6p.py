@@ -18,7 +18,7 @@ print("Original array with Inf:", arr_inf)
 print("Is Inf:", np.isinf(arr_inf))  # Check for Inf values
 print("Replace Inf with 0:", np.where(np.isinf(arr_inf), 0, arr_inf))  # Replace Inf with 0
 print("Replace Inf with 999:", np.where(np.isinf(arr_inf), 999, arr_inf))  # Replace Inf with 999
-print("Replace Inf with 999:", np.where(np.isinf(arr_inf), np.nanmean(arr), arr_inf))  # Replace Inf with 999
+print("Replace Inf with mean:", np.where(np.isinf(arr_inf), np.nanmean(arr), arr_inf))  # Replace Inf with 999
 print("repplace -Inf with 7:", np.where(arr_inf == -np.inf, 7, arr_inf))  # Replace -Inf with 7
 print("replace Inf with 10:", np.where(arr_inf == np.inf, 10, arr_inf))  # Replace Inf with 10
 
