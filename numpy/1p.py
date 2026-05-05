@@ -115,4 +115,15 @@ print("Default array (arange with step):\n", defaultarr5_with_step)  # numpy pro
 defaultarr6 = np.linspace(0, 2, 5)  # (start, end, number of values)
 print("Default array (linspace):\n", defaultarr6)  # numpy provides functions to create arrays with a specified number of evenly spaced values between a start and end point
  
+defaultarr7 = np.random.rand(3, 4)
+print("Default array (random):\n", defaultarr7)  # numpy provides functions to create arrays with random values
 
+defaultarr8 = np.random.randint(0, 10, (3, 4))
+print("Default array (random integers):\n", defaultarr8)  # numpy provides
+
+defaultarr9 = np.diag([1, 2, 3, 4])
+print("Default array (diagonal):\n", defaultarr9)  # numpy provides functions to create diagonal matrices
+#  [[1 0 0 0]
+#  [0 2 0 0]
+#  [0 0 3 0]
+#  [0 0 0 4]]
